@@ -1,6 +1,6 @@
-task = input("What task do you want to be reminded of? ")
-time_bound = input("Is it time bound? (yes/no): ").lower()
-priority = input("Is it high, medium, or low priority? ").lower()
+task = input("Enter your task: ")
+time_bound = input("Is it time-bound? (yes/no): ").lower()
+priority = input("Priority?(high/medium/low: ").lower()
 match priority:
     case ("high"):
         if time_bound == "yes":
