@@ -33,3 +33,5 @@ if conversion_type == 'F':
 elif conversion_type == 'C':
     result = convert_to_fahrenheit(input_temp)
     print(f"{input_temp}°C is {result:.2f}°F")
+else:
+    print("Invalid temperature.please enter a numeric value.")
