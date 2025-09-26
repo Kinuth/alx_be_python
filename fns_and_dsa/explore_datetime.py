@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 def display_current_datetime():
     """Display the current date and time in a readable format."""
     now = datetime.now()
-    formatted_datetime = now.strftime("%Y-%m-%d %H:%M:%S")
     return now.strftime("%Y-%m-%d %H:%M:%S")
 
 current_date = display_current_datetime()
@@ -17,5 +16,6 @@ def calculate_future_date(days):
     now = datetime.now()
     future_date = now + timedelta(days=number_of_days)
     return future_date.strftime("%Y-%m-%d")
+
 print(f"Date after {number_of_days} days: {calculate_future_date(number_of_days)}") 
 
