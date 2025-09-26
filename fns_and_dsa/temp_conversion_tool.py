@@ -13,7 +13,7 @@ while True:
         input_temp = float(input("Enter the temperature to convert: "))
         break  # exit loop if input is valid
     except ValueError:
-        print("Invalid input! Please enter a numeric value for the temperature.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 # Loop until user enters C or F
 while True:
