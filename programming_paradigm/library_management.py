@@ -6,6 +6,8 @@ class Book:
     def __repr__(self):
         status = "Checked Out" if self._is_checked_out else "Available"
         return f"'{self.title}' by {self.author} - {status}"
+    def return_book(self):
+        self._is_checked_out = False
 class Library:
     def __init__(self):
         self.books = []
